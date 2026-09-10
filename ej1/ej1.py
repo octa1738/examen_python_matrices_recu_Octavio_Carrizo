@@ -13,17 +13,17 @@ while True:
         Filas = int(input("Ingresá el número de filas: "))
         Columnas = int(input("Ingresá el número de columnas: "))
         matriz = []
-        for xd in range(Filas):
+        for i in range(Filas):
             fila = []
-            for gg in range(Columnas):
-                valor = int(input(f"Ingresá el valor para la fila {xd + 1}, columna {gg + 1}: "))
+            for j in range(Columnas):
+                valor = int(input(f"Ingresá el valor para la fila {i + 1}, columna {j + 1}: "))
                 fila.append(valor)
             matriz.append(fila)
     elif menu == 2:
         for fila in matriz:
             print(fila)
     elif menu == 3:
-        suma = 0
+        suma += 0
         for fila in matriz:
             for valor in fila:
                 suma += valor
